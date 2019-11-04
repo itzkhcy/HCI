@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+
+<script>
+	function exec()
+	{
+               		//if ( document.intro.language.selectedValue=="about.html" )
+			//<jsp:forward page="hr.html"/>
+
+			alert("Selected Combo");
+	}
+</script>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title>User Login</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+<style type="text/css">
+
+.style1 {
+	color: #2a4f5e;
+	font-weight: bold;
+}
+.style2 {font-size: 24px}
+.style3 {
+	font-size: 14px;
+	color: #5d5d5d;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+   background-color: #e5d6da;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+</style>
+</head>
+
+
+
+<body>
+
+	<div class="header">
+  <h1>Smart Health Tracking System (Tracking Emotions)</h1>
+</div>
+
+<div class="topnav">
+
+  
+			<a href="index.html"><span>HOME</span></a>
+			<a href="about.html"><span>ABOUT US</span></a>
+			<a href="user.html"><span>USERS</span></a>
+		
+</div>
+
+<center> <img src="icon.png" width="223" height="226" alt="icon"/></center>
+
+
+
+<p align="center"><b><font size="6" face="Courier New"><strong><font color="#2a4f5e">User Login</font></strong></font></b></p>
+
+  <form action="user_login.jsp" method=post target="_top">  
+  <div align="center">
+    <table border="0" width="31%" height="150">
+      <tr>
+        <td width="36%" height="25"><div align="left"><b><font color="#2a4f5e" size="5">User Name:</font></b></div></td>
+        <td width="64%" height="25">
+  <input type="text"  name="username" size="15"></td>
+      </tr>
+      <tr>
+        <td width="36%" height="25"><div align="left"><b><font color="#2a4f5e" size="5">Password:</font></b></div></td>
+        <td width="64%" height="25">
+  <input type="password"  name="password" size="15"></td>
+      </tr>
+      <tr>
+        <td width="100%" height="40" colspan="2">
+        <p align="center"><input type="submit"  value="Login" name="B1"><input type="reset" value="Reset" name="B2"></td>
+      </tr>
+    </table>
+   
+    <p><font color="#efeeee" size="3"><a href="upload_new1.jsp"><strong>New User? Register here </strong></a></font></p>
+  </div>
+</form>
+
+</body>
+</html>
